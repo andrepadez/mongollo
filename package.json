@@ -1,0 +1,15 @@
+{
+  "name": "mongollo",
+  "version": "0.0.1",
+  "description": "generator for apollo / mongooose servers",
+  "main": "mongollo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mongollo": "./mongollo.js"
+  },
+  "keywords": [],
+  "author": "André Alçada Padez <andre.padez@gmail.com>",
+  "license": "MIT"
+}
