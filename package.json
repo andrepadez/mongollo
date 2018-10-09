@@ -1,6 +1,6 @@
 {
   "name": "mongollo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "generator for apollo / mongooose servers",
   "main": "mongollo.js",
   "scripts": {
