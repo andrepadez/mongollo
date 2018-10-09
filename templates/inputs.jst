@@ -1,0 +1,8 @@
+import { gql } from 'apollo-server-express'
+
+export default gql`
+  input {{upper-case-singular}}Input {
+    _id: ID
+    name: String!
+  }
+`

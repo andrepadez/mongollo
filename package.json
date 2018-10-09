@@ -11,5 +11,8 @@
   },
   "keywords": [],
   "author": "André Alçada Padez <andre.padez@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "plural": "^1.1.0"
+  }
 }

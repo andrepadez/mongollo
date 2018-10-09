@@ -1,0 +1,30 @@
+import {{upper-case-plural}} from './model'
+
+export default {
+  Query: {
+    {{lower-case-plural}}: () => {
+      return {{upper-case-plural}}.find({})
+    },
+    {{lower-case-singular}}: (_, { _id }) => {
+      return {{upper-case-plural}}.findOne({ _id })
+    }
+  },
+
+  Mutation: {
+    create{{upper-case-singular}}: (_, { {{lower-case-singular}} }) => {
+      return {{upper-case-plural}}.create({{lower-case-singular}})
+    },
+    update{{upper-case-singular}}: (_, { {{lower-case-singular}} }) => {
+      const _id = {{lower-case-singular}}._id
+      return {{upper-case-plural}}.findByIdAndUpdate(_id, { $set: {{lower-case-singular}} }, { new: true })
+    },
+    remove{{upper-case-singular}}: (_, { _id }) => {
+      return {{upper-case-plural}}.findOne({ _id })
+        .then({{lower-case-singular}} => {{lower-case-singular}}.delete().then(() => {{lower-case-singular}}))
+    }
+  },
+
+  {{upper-case-singular}}: {
+    _id: {{lower-case-singular}} => {{lower-case-singular}}._id.toString()
+  }
+}

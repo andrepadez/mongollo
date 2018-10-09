@@ -1,0 +1,7 @@
+import mongoose, from 'mongoose'
+
+const {{lower-case-singular}}Schema = new mongoose.Schema({
+  name: String
+})
+
+export default mongoose.model('{{lower-case-plural}}', {{lower-case-singular}}Schema)
